@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context="com.example.tsopin.timofeisopin_mapd711_task1.FirstActivity">
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:elevation="10dp"
+        android:onClick="sendButton"
+        android:text="SEND"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/textEd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter your Full Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textEd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textV3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textEd1"
+        android:ems="10"
+        android:hint="Enter your Qualification"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textEd3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textV4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textEd2"
+        android:ems="10"
+        android:hint="Enter your Profession"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textEd4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textV5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textEd3"
+        android:ems="10"
+        android:hint="Enter your Hobby"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/textEd5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textV5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textEd4"
+        android:ems="10"
+        android:hint="Enter your Dream Job"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textV1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textEd1"
+        android:layout_alignTop="@+id/textEd1"
+        android:layout_toLeftOf="@+id/textEd1"
+        android:layout_toStartOf="@+id/textEd1"
+        android:paddingLeft="0dp"
+        android:text="Full Name"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="23sp"
+        android:translationX="-30dp"
+        android:translationY="5dp" />
+
+    <TextView
+        android:id="@+id/textV2"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textV1"
+        android:layout_toLeftOf="@+id/textEd1"
+        android:layout_toStartOf="@+id/textEd1"
+        android:paddingLeft="10dp"
+        android:text="Qualification"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textV3"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textV2"
+        android:layout_toLeftOf="@+id/textEd2"
+        android:layout_toStartOf="@+id/textEd2"
+        android:paddingLeft="10dp"
+        android:text="Profession"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textV4"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textV3"
+        android:layout_toLeftOf="@+id/textEd3"
+        android:layout_toStartOf="@+id/textEd3"
+        android:paddingLeft="10dp"
+        android:text="Hobby"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textV5"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textV4"
+        android:layout_toLeftOf="@+id/textEd4"
+        android:layout_toStartOf="@+id/textEd4"
+        android:paddingLeft="10dp"
+        android:text="Dream Job"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="23sp" />
+
+</RelativeLayout>
